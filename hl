@@ -1,0 +1,5 @@
+#mPythonType:0
+from mpython import *
+oled.fill(0)
+oled.DispChar(str('Hello, world!'), 0, 0, 1)
+oled.show()
