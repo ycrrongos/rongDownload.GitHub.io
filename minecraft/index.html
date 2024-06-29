@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Resent 1.8" />
 		<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8, resent, hooman, kone, nitwit, lax1dude" />
-		<title>rong|Resent Client</title>
+		<title>Resent Client</title>
 		<meta property="og:locale" content="en-US" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Resent 1.8" />
@@ -163,13 +163,13 @@
 				setTimeout(() => {
 					document.getElementsByClassName("ratio")[0].display = "none";
 				}, 400);
-				document.getElementById("progresstext").innerText = "解压缩资源中......(在速度较慢的设备上可能需要 1-2 分钟)";
+				document.getElementById("progresstext").innerText = "Decompressing Assets (May take 1-2 minutes on a slow device)";
 			}
 
 			let interval;
 
 			function enable(){
-				document.getElementById("progresstext").innerText = "加载完成，点击任意位置即可开始游戏!";
+				document.getElementById("progresstext").innerText = "Click anywhere on the screen to start Resent!";
 				let title = document.getElementById("clienttitle");
 				let versionText = document.getElementById("clientversion");
 				title.style.fontSize = "10vw";
@@ -201,7 +201,7 @@
 				versionText.style.fontSize = "2.5vw";
 				title.style.top = "25vh";
                 document.getElementById("progresstext").style.top = "30vh";
-				document.getElementById("progresstext").innerText = "加载中...... Resent "+versionNum;
+				document.getElementById("progresstext").innerText = "Loading Resent "+versionNum;
 				
 			}
 
@@ -312,7 +312,6 @@
 							{ addr: "wss://konemc.kones.tech/", name: "koneMC" },
 							{ addr: "wss://play.valkaria.net/", name: "Valkaria (Coming Soon)" },
 							{ addr: "wss://ggsmp.net", name: "HellTech Network"}
-							{ addr: "wss://ws.imc.re/server", name: "IMCRE"}
 							
 						],
 					};
