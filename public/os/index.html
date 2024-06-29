@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Clockwork V2 Beta</title>
+  <script src="/assets/scripts/enc-dec.js"></script>
+  <link rel="stylesheet" href="/assets/styles/os.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/images/icon.png">
+  <meta name="description" content="The newest version of Clockwork">
+  <meta name="slingcode-tags" content="beta,redstone,redstone-network">
+
+  <stylesheets>
+
+  </stylesheets>
+
+  <script src="https://takeback-1-b5552992.deta.app/api/kit/YL9YM0E3PGO6O57IQ67KF"></script>
+</head>
+
+<body>
+
+  <span id="clockwork-loading" class="clockwork-panel">
+
+    <div>
+      <h1>
+        CLOCKWORK
+      </h1>
+      If this doesn't load in a few seconds, reload.<br>
+      <progress id="cw-load-bar" value="0" max="100"> 32% </progress>
+    </div>
+
+  </span>
+
+  <span id="clockwork-prmpt" class="clockwork-panel" style="display: none;">
+
+    <div>
+      <h1 class="prmpt-title">
+        App installation confirmation
+      </h1>
+      <span class="prmpt-text"></span><br>
+      <btn class="prmpt-yes">Yes</btn>
+      <btn class="prmpt-no">No</btn>
+    </div>
+
+  </span>
+
+  <span id="clockwork-lock" class="clockwork-panel" style="display: none;">
+
+    <div>
+      <h1>
+        Welcome.
+      </h1>
+      For your security, please enter your passcode.<br><br>
+      <input type="password" maxlength="6" id="passcode">
+    </div>
+
+  </span>
+
+  <span id="clockwork-content" style="display: none;">
+    <input class="finder" placeholder="Type something..." style="display: none;">
+    <div class="finder-box" style="display: none;">
+      Type something in the box, and items will appear here.
+    </div>
+    <div id="contextmenu" class="invisible" style="display: none;">
+      <btn id="cm:closeapp">Close app</btn>
+      <btn id="cm:uninstallapp">Uninstall app</btn>
+      <btn id="cm:mleft">Move left</btn>
+      <btn id="cm:mright">Move right</btn>
+    </div>
+    <div id="apppanel">
+      <div class="app appopen" id="apppanel:sys_home">
+        
+      </div>
+      <div class="app" id="apppanel:sys_settings">
+        <div class="left">
+          <h1>Settings</h1>
+          <div class="selections">
+            
+          </div>
+          
+        </div>
+        <div class="right">
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="appbar">
+      <btn id="appbar:sys_home" onclick="openApp('sys_home');" class="open">
+        <img src="/assets/images/ui/home.png">
+      </btn>
+      <btn id="appbar:sys_settings" onclick="openApp('sys_settings');">
+        <img src="/assets/images/ui/settings.png">
+      </btn>
+    </div>
+    <div id="appsidebar">
+      <div id="appsidebar-clock">...</div>
+      <btn onclick="openNotificationPanel();">
+        <img id="appsidebar:notifs" src="/assets/images/ui/bell.png">
+      </btn>
+    </div>
+    <div id="clockwork-notification-panel" class="visible">
+      <t>Notifications
+        <img src="/assets/images/ui/trash-can.png" onclick="clearAllNotifs();">
+      </t>
+      <span id="clockwork-notification-items">You're all caught up!</span>
+    </div>
+    </div>
+
+
+  </span>
+
+  <!--<script src="https://cdn.jsdelivr.net/gh/red-stone-network/altconsole@main/altconsole.js"></script>-->
+</body>
+
+</html>
+<script src="/assets/scripts/os.js"></script>

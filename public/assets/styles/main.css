@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+@keyframes detailsopen {
+  0%    {opacity: 0; left: -10px}
+  100%  {opacity: 1; left: 0px}
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Asap", "Roboto Flex", "Roboto", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.home-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/images/banner.svg");
+  background-color: black;
+  background-size: cover;
+  background-position: 50%;
+}
+.home-banner > span {
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Varela Round", Arial, sans-serif;
+  font-size: 3vw;
+}
+.content {
+  font-size: 20px;
+  padding-top: 6px;
+  min-height: calc(100vh - 37px);
+}
+.navbar {
+  width: 100%;
+  padding: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #111;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Varela Round", Arial, sans-serif;
+  text-align: center;
+}
+h1 {
+  color: red;
+}
+h2 {
+  color: #f88;
+}
+p {
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+div.withimgleft,div.withimgright {
+  display: block;
+  padding: 6px 10px;
+  position: relative;
+  height: 100vh;
+}
+div.withimgleft > img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  max-height: 100vh;
+  object-fit: cover;
+  transform: translateY(-50%);
+}
+div.withimgleft > div {
+  width: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+div.withimgright > img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  max-height: 100vh;
+  object-fit: cover;
+  transform: translateY(-50%);
+}
+div.withimgright > div {
+  width: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+a {
+  color: red;
+}
+a:link {
+  color: red;
+  transition: 0.2s;
+}
+a:hover {
+  color: #f88;
+  transition: 0.2s;
+}
+details[open] summary ~ * {
+  position: relative;
+  animation: detailsopen .5s ease-in-out;
+}
+details > summary {
+  display: block;
+  color: #f88;
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  font-family: "Varela Round", Arial, sans-serif;
+  transition: 0.2s;
+}
+details[open] > summary {
+  color: red;
+  transition: 0.2s;
+}
+summary::marker {
+  content: "";
+}
+.letsgo {
+  font-size: 7vw;
+  padding: 0;
+  text-align: center;
+  font-family: "Varela Round", Arial, sans-serif;
+}
+textarea {
+  background-color: #111;
+  color: white;
+  border: 1px solid #222;
+  width: 100%;
+  height: 400px;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+  background-color: #111;
+  color: white;
+  border: 1px solid #222;
+  border-radius: 0;
+  outline: none;
+  font-size: 16px;
+  font-family: "Roboto Flex", "Roboto", Arial, sans-serif;
+}
+
+iframe.a.xy.d.lo.bnr {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
